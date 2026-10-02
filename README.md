@@ -1,8 +1,6 @@
 # Drowsiness Detection System
 
-![image](https://github.com/user-attachments/assets/81ab2ce9-94ed-479b-bb76-d289c99800fc)
-![image](https://github.com/user-attachments/assets/0615e219-f623-47ff-9448-946a9c273500)
-![image](https://github.com/user-attachments/assets/b25705ed-d976-45a3-a080-fe1e12f220fd)
+
 
 ## Overview
 
@@ -39,14 +37,14 @@ This repository focuses on illustrating the full development process, including 
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/tyrerodr/Real_time_drowsy_driving_detection.git
+    git clone https://github.com/tanish-eve/Real_time_drowsy_driving_detection.git
     cd Real_time_drowsy_driving_detection
     ```
 
 2. **Create a virtual environment:**
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    python -m venv venv
+    venv\Scripts\activate 
     ```
 
 3. **Install dependencies:**
@@ -121,8 +119,3 @@ We appreciate any feedback and contributions to improve the system.
 - **Mobile Deployment:** Create a mobile app version for real-time on-the-go monitoring.
 
 ---
-
-**Eng. Tyrone Eduardo Rodriguez Motato**  
-Computer Vision Engineer  
-Guayaquil, Ecuador  
-Email: tyrerodr@hotmail.com
