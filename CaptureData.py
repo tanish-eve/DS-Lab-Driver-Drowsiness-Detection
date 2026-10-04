@@ -1,5 +1,6 @@
 from datetime import datetime
 import time
+import os
 import cv2
 import tkinter as tk
 from tkinter import Button, Label
@@ -45,8 +46,11 @@ class CaptureCameraApp:
         ret, frame = self.cap.read()
         if ret:
             dateid = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-            cv2.imwrite("database/untagged_images/{}_{}.jpg".format(action, dateid), frame)
-            print("Image captured and saved as  '{}/data_{}.jpg'".format(action, dateid))
+            save_dir = "database/untagged_images"
+            os.makedirs(save_dir, exist_ok=True)
+            file_path = os.path.join(save_dir, f"{action}_{dateid}.jpg")
+            cv2.imwrite(file_path, frame)
+            print(f"Image captured and saved as '{file_path}'")
 
 
 root = tk.Tk()

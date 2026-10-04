@@ -2,8 +2,8 @@
 path: datasets
 train: images/train
 val: images/val
-# test: images/test
-nc: 2 # Número de clases; ajusta según el número total de clases en tus datos
-names: # Nombres de las clases; ajusta según tus clases
+test: images/test
+nc: 2 
+names:
   0: open eye
   1: close eye

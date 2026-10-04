@@ -9,3 +9,6 @@
 /requirements
 yolov8n.pt
 __pycache__/
+runs/detect/
+runs/detecteye/train4/
+*.cache
